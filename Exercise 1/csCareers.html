@@ -1,0 +1,46 @@
+<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w4.org/1999/xhtml">
+  <head>
+	 <meta charset="utf-8">
+    <title>Career Explorer</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet"> 
+	  
+	  <link href="exStyle.css" rel="stylesheet" type="text/css">
+  </head>
+	
+  <body>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+	<div id = "Container">
+  <h1>Career Exploration</h1>
+	  
+	  <form name="CareerExplorer" 
+			action="CareerDatabase.php"
+			method="post">
+		  <p>Enter Name: <input type="text" id="personName" name="fullName" /></p>
+		
+	  
+	  <h2>Select a career of choice</h2>
+	  
+	  <label for = "career"> Choose a career : </label>
+		  <select id= "career" name="career">
+			  <option value="Blank"></option>
+			  <option value="Digital Music" >Digital Music</option>
+			  <option value="Software Engineer" >Software Engineer</option>
+			  <option value="Computer Arts">Computer Arts + Design</option>
+			  <option value="Data Science" >Data Science</option>
+			  <option value="Cyber Security">Cyber Security</option>		  
+	  	  </select>
+
+	 	 <p><input type="reset" value="Clear Form" />&nbsp;
+			 &nbsp;<input type="submit" name="Submit" value="Send Form" /></p>
+		  
+	  </form>
+	</div>  
+	  
+  </body>
+</html>
